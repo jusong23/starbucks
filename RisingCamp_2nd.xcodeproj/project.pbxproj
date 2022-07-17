@@ -18,6 +18,8 @@
 		9BC6927C2883B2A100B0F5A7 /* 스크린샷 2022-07-17 11.59.33.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6927B2883B2A100B0F5A7 /* 스크린샷 2022-07-17 11.59.33.png */; };
 		9BC6927F28840FD100B0F5A7 /* 해변_일러스트.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6927E28840FD000B0F5A7 /* 해변_일러스트.html */; };
 		9BC692822884105E00B0F5A7 /* 해변2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC692812884105E00B0F5A7 /* 해변2.jpeg */; };
+		9BC6928528841EC400B0F5A7 /* IMG_1589.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6928328841EC300B0F5A7 /* IMG_1589.jpg */; };
+		9BC6928628841EC400B0F5A7 /* IMG_1590.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6928428841EC300B0F5A7 /* IMG_1590.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		9BC6927E28840FD000B0F5A7 /* 해변_일러스트.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "해변_일러스트.html"; path = "../../../Downloads/해변_일러스트.html"; sourceTree = "<group>"; };
 		9BC6928028840FF200B0F5A7 /* 해변_일러스트.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "해변_일러스트.png"; path = "../../../Downloads/해변_일러스트.png"; sourceTree = "<group>"; };
 		9BC692812884105E00B0F5A7 /* 해변2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "해변2.jpeg"; path = "../../../Downloads/해변2.jpeg"; sourceTree = "<group>"; };
+		9BC6928328841EC300B0F5A7 /* IMG_1589.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1589.jpg; path = ../../../Downloads/IMG_1589.jpg; sourceTree = "<group>"; };
+		9BC6928428841EC300B0F5A7 /* IMG_1590.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1590.jpg; path = ../../../Downloads/IMG_1590.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				9BC6927E28840FD000B0F5A7 /* 해변_일러스트.html */,
 				9BC6928028840FF200B0F5A7 /* 해변_일러스트.png */,
 				9BC692812884105E00B0F5A7 /* 해변2.jpeg */,
+				9BC6928328841EC300B0F5A7 /* IMG_1589.jpg */,
+				9BC6928428841EC300B0F5A7 /* IMG_1590.jpg */,
 			);
 			path = RisingCamp_2nd;
 			sourceTree = "<group>";
@@ -146,7 +152,9 @@
 				9BC692782883A21D00B0F5A7 /* switcher in Resources */,
 				9BC6926528828A3500B0F5A7 /* Assets.xcassets in Resources */,
 				9BC6927F28840FD100B0F5A7 /* 해변_일러스트.html in Resources */,
+				9BC6928528841EC400B0F5A7 /* IMG_1589.jpg in Resources */,
 				9BC6927628839EBD00B0F5A7 /* logo in Resources */,
+				9BC6928628841EC400B0F5A7 /* IMG_1590.jpg in Resources */,
 				9BC6926328828A3200B0F5A7 /* Main.storyboard in Resources */,
 				9BC692822884105E00B0F5A7 /* 해변2.jpeg in Resources */,
 				9BC6927C2883B2A100B0F5A7 /* 스크린샷 2022-07-17 11.59.33.png in Resources */,
