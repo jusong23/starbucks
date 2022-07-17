@@ -13,6 +13,8 @@
 		9BC6926328828A3200B0F5A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6926128828A3200B0F5A7 /* Main.storyboard */; };
 		9BC6926528828A3500B0F5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6926428828A3500B0F5A7 /* Assets.xcassets */; };
 		9BC6926828828A3500B0F5A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6926628828A3500B0F5A7 /* LaunchScreen.storyboard */; };
+		9BC6927628839EBD00B0F5A7 /* 스타벅스_로고.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6927428839EBD00B0F5A7 /* 스타벅스_로고.png */; };
+		9BC692782883A21D00B0F5A7 /* switcher in Resources */ = {isa = PBXBuildFile; fileRef = 9BC692772883A21D00B0F5A7 /* switcher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9BC6926428828A3500B0F5A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BC6926728828A3500B0F5A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BC6926928828A3500B0F5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC6927428839EBD00B0F5A7 /* 스타벅스_로고.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "스타벅스_로고.png"; path = "../../../Downloads/스타벅스_로고.png"; sourceTree = "<group>"; };
+		9BC692772883A21D00B0F5A7 /* switcher */ = {isa = PBXFileReference; lastKnownFileType = file; name = switcher; path = ../../../Downloads/switcher; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				9BC6926428828A3500B0F5A7 /* Assets.xcassets */,
 				9BC6926628828A3500B0F5A7 /* LaunchScreen.storyboard */,
 				9BC6926928828A3500B0F5A7 /* Info.plist */,
+				9BC6927428839EBD00B0F5A7 /* 스타벅스_로고.png */,
+				9BC692772883A21D00B0F5A7 /* switcher */,
 			);
 			path = RisingCamp_2nd;
 			sourceTree = "<group>";
@@ -126,7 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC6926828828A3500B0F5A7 /* LaunchScreen.storyboard in Resources */,
+				9BC692782883A21D00B0F5A7 /* switcher in Resources */,
 				9BC6926528828A3500B0F5A7 /* Assets.xcassets in Resources */,
+				9BC6927628839EBD00B0F5A7 /* 스타벅스_로고.png in Resources */,
 				9BC6926328828A3200B0F5A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
