@@ -12,6 +12,7 @@ class OtherViewController: UIViewController {
     @IBOutlet weak var otherView: UIView!
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var InfoTap: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,17 @@ class OtherViewController: UIViewController {
         self.otherView.layer.shadowColor = UIColor.black.cgColor
         self.otherView.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.otherView.layer.shadowOpacity = 0.2
+        
+        self.InfoTap.layer.borderWidth = 0.3
+        self.InfoTap.layer.borderColor = UIColor.lightGray.cgColor
+        self.InfoTap.layer.cornerRadius = 10
+        
     }
+    
+    
+    
+    
+    
 
 }
 
