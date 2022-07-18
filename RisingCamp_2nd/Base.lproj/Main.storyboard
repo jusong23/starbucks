@@ -274,30 +274,6 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6d-rx-BMa">
-                                                <rect key="frame" x="0.0" y="704" width="414" height="130"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NA2-7h-ZwT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="128" id="ANU-dd-7o6"/>
-                                                            <constraint firstAttribute="width" constant="128" id="VOT-es-RkV"/>
-                                                        </constraints>
-                                                    </view>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="NA2-7h-ZwT" firstAttribute="top" secondItem="eTJ-gH-BPF" secondAttribute="top" id="9EE-g1-5m3"/>
-                                                    <constraint firstItem="NA2-7h-ZwT" firstAttribute="height" secondItem="q6d-rx-BMa" secondAttribute="height" multiplier="0.984615" id="KVe-Bo-K5M"/>
-                                                    <constraint firstItem="NA2-7h-ZwT" firstAttribute="top" secondItem="q6d-rx-BMa" secondAttribute="top" id="Odp-cg-uav"/>
-                                                    <constraint firstAttribute="bottom" secondItem="NA2-7h-ZwT" secondAttribute="bottom" id="XyT-qU-KKu"/>
-                                                    <constraint firstItem="NA2-7h-ZwT" firstAttribute="width" secondItem="q6d-rx-BMa" secondAttribute="width" multiplier="0.309179" id="ciw-vj-ZBB"/>
-                                                    <constraint firstItem="NA2-7h-ZwT" firstAttribute="leading" secondItem="q6d-rx-BMa" secondAttribute="leading" id="rgx-t7-6K2"/>
-                                                    <constraint firstAttribute="trailing" secondItem="NA2-7h-ZwT" secondAttribute="trailing" constant="286" id="sMv-rb-ocm"/>
-                                                </constraints>
-                                                <viewLayoutGuide key="contentLayoutGuide" id="awe-Rm-Sxv"/>
-                                                <viewLayoutGuide key="frameLayoutGuide" id="eTJ-gH-BPF"/>
-                                            </scrollView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -312,13 +288,10 @@
                                             <constraint firstItem="PSk-2c-ZgX" firstAttribute="top" secondItem="Cxe-fG-n6Z" secondAttribute="bottom" constant="10" id="QI6-Lk-lMK"/>
                                             <constraint firstItem="CU9-HD-NZc" firstAttribute="top" secondItem="8fA-vM-4Cw" secondAttribute="bottom" id="R0R-A8-1t2"/>
                                             <constraint firstItem="8fA-vM-4Cw" firstAttribute="leading" secondItem="fNm-xN-NOQ" secondAttribute="leading" id="RRa-16-aH6"/>
-                                            <constraint firstItem="q6d-rx-BMa" firstAttribute="top" secondItem="Ycl-XJ-w3t" secondAttribute="bottom" constant="24" id="UBs-P9-5W5"/>
                                             <constraint firstItem="Ycl-XJ-w3t" firstAttribute="leading" secondItem="fNm-xN-NOQ" secondAttribute="leading" constant="20" id="fnm-6l-cLV"/>
                                             <constraint firstItem="qKG-9Q-xER" firstAttribute="leading" secondItem="fNm-xN-NOQ" secondAttribute="leading" constant="20" id="gab-4t-Z6W"/>
                                             <constraint firstAttribute="trailing" secondItem="8fA-vM-4Cw" secondAttribute="trailing" id="imW-po-p0n"/>
                                             <constraint firstAttribute="trailing" secondItem="qKG-9Q-xER" secondAttribute="trailing" constant="20" id="k09-ad-OTl"/>
-                                            <constraint firstItem="q6d-rx-BMa" firstAttribute="leading" secondItem="fNm-xN-NOQ" secondAttribute="leading" id="lWe-Q2-3ky"/>
-                                            <constraint firstAttribute="trailing" secondItem="q6d-rx-BMa" secondAttribute="trailing" id="m6y-CL-UBN"/>
                                             <constraint firstItem="Ycl-XJ-w3t" firstAttribute="top" secondItem="PSk-2c-ZgX" secondAttribute="bottom" constant="35" id="ms3-8X-fOy"/>
                                             <constraint firstItem="Cxe-fG-n6Z" firstAttribute="leading" secondItem="fNm-xN-NOQ" secondAttribute="leading" constant="8" id="raC-d5-Qn4"/>
                                             <constraint firstItem="PSk-2c-ZgX" firstAttribute="leading" secondItem="fNm-xN-NOQ" secondAttribute="leading" constant="8" id="sv7-nF-YqU"/>
@@ -742,7 +715,12 @@
                         <viewLayoutGuide key="safeArea" id="vh8-uA-KcE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kFO-gU-dyj"/>
+                    <navigationItem key="navigationItem" id="kFO-gU-dyj">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" id="Ek5-D5-n1M"/>
+                            <barButtonItem title="Item" id="lcp-00-FY0"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOe-ex-snY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

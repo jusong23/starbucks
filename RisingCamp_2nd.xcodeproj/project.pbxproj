@@ -23,6 +23,7 @@
 		9BC69288288528E500B0F5A7 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC69287288528E500B0F5A7 /* PayViewController.swift */; };
 		9BC6928B2885335200B0F5A7 /* IMG_1603.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC692892885334C00B0F5A7 /* IMG_1603.jpg */; };
 		9BC6928C2885335200B0F5A7 /* IMG_1602.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6928A2885334F00B0F5A7 /* IMG_1602.jpg */; };
+		9BC6928E2885417700B0F5A7 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6928D2885417700B0F5A7 /* OtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		9BC69287288528E500B0F5A7 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		9BC692892885334C00B0F5A7 /* IMG_1603.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1603.jpg; path = ../../../Downloads/IMG_1603.jpg; sourceTree = "<group>"; };
 		9BC6928A2885334F00B0F5A7 /* IMG_1602.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1602.jpg; path = ../../../Downloads/IMG_1602.jpg; sourceTree = "<group>"; };
+		9BC6928D2885417700B0F5A7 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				9BC6925D28828A3200B0F5A7 /* SceneDelegate.swift */,
 				9BC6925F28828A3200B0F5A7 /* ViewController.swift */,
 				9BC6926128828A3200B0F5A7 /* Main.storyboard */,
+				9BC6928D2885417700B0F5A7 /* OtherViewController.swift */,
 				9BC69287288528E500B0F5A7 /* PayViewController.swift */,
 				9BC6926428828A3500B0F5A7 /* Assets.xcassets */,
 				9BC6926628828A3500B0F5A7 /* LaunchScreen.storyboard */,
@@ -183,6 +186,7 @@
 				9BC6925C28828A3200B0F5A7 /* AppDelegate.swift in Sources */,
 				9BC6925E28828A3200B0F5A7 /* SceneDelegate.swift in Sources */,
 				9BC69288288528E500B0F5A7 /* PayViewController.swift in Sources */,
+				9BC6928E2885417700B0F5A7 /* OtherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
