@@ -21,6 +21,8 @@ class AccountInfoViewController: UIViewController {
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
 }
 
 
