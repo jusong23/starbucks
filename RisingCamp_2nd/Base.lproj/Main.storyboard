@@ -955,13 +955,73 @@
                     <view key="view" contentMode="scaleToFill" id="LES-GC-gNH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBk-Cz-eim">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcU-uY-uqc">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <subviews>
+                                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9I-sg-kHV">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <items>
+                                                    <navigationItem title="계정정보" id="Co1-P2-DQA">
+                                                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="9mJ-2t-HIs">
+                                                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <connections>
+                                                                <action selector="backButton:" destination="hMW-bQ-L2e" id="ONf-g8-H9y"/>
+                                                            </connections>
+                                                        </barButtonItem>
+                                                    </navigationItem>
+                                                </items>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.20000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </navigationBar>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="v9I-sg-kHV" firstAttribute="leading" secondItem="xcU-uY-uqc" secondAttribute="leading" id="2x4-x1-A1j"/>
+                                            <constraint firstAttribute="trailing" secondItem="v9I-sg-kHV" secondAttribute="trailing" id="5X9-qq-pCn"/>
+                                            <constraint firstItem="v9I-sg-kHV" firstAttribute="width" secondItem="xcU-uY-uqc" secondAttribute="width" id="KRN-mv-RcY"/>
+                                            <constraint firstItem="v9I-sg-kHV" firstAttribute="top" secondItem="xcU-uY-uqc" secondAttribute="top" id="gng-qH-J9s"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xcU-uY-uqc" firstAttribute="width" secondItem="YBk-Cz-eim" secondAttribute="width" id="Aug-cL-SpA"/>
+                                    <constraint firstItem="xcU-uY-uqc" firstAttribute="top" secondItem="YBk-Cz-eim" secondAttribute="top" id="OuV-cy-hYy"/>
+                                    <constraint firstAttribute="trailing" secondItem="xcU-uY-uqc" secondAttribute="trailing" id="POs-sw-pvt"/>
+                                    <constraint firstItem="xcU-uY-uqc" firstAttribute="height" secondItem="YBk-Cz-eim" secondAttribute="height" id="Pxe-ko-DSz"/>
+                                    <constraint firstAttribute="bottom" secondItem="xcU-uY-uqc" secondAttribute="bottom" id="UFG-Gl-y2M"/>
+                                    <constraint firstItem="xcU-uY-uqc" firstAttribute="leading" secondItem="YBk-Cz-eim" secondAttribute="leading" id="gsw-cg-BFq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="oUn-cm-pol"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="487-uw-ZEy"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="elq-h4-u2O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YBk-Cz-eim" firstAttribute="trailing" secondItem="elq-h4-u2O" secondAttribute="trailing" id="7Kx-ye-HXl"/>
+                            <constraint firstItem="YBk-Cz-eim" firstAttribute="leading" secondItem="elq-h4-u2O" secondAttribute="leading" id="LMB-lJ-SIS"/>
+                            <constraint firstItem="YBk-Cz-eim" firstAttribute="top" secondItem="elq-h4-u2O" secondAttribute="top" id="ehT-Fb-qE3"/>
+                            <constraint firstAttribute="bottom" secondItem="YBk-Cz-eim" secondAttribute="bottom" id="u85-2c-IWI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="YBk-Cz-eim" id="JUP-2M-qCq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQJ-ad-ROn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3391" y="2928"/>
+            <point key="canvasLocation" x="3389.8550724637685" y="2927.6785714285711"/>
         </scene>
     </scenes>
     <resources>
@@ -971,6 +1031,7 @@
         <image name="IMG_1603.jpg" width="319.33334350585938" height="60"/>
         <image name="IMG_1607 2.jpg" width="134.66667175292969" height="134.66667175292969"/>
         <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <image name="cup.and.saucer.fill" catalog="system" width="128" height="91"/>
         <image name="envelope.badge" catalog="system" width="128" height="102"/>
