@@ -24,8 +24,6 @@ class ViewController: UIViewController {
         self.WhatsnewAndCouponVIew.layer.shadowColor = UIColor.black.cgColor
         self.WhatsnewAndCouponVIew.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.WhatsnewAndCouponVIew.layer.shadowOpacity = 0.2
-        
- 
     }
 
     
