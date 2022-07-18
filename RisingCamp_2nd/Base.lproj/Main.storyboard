@@ -639,6 +639,7 @@
                     <size key="freeformSize" width="414" height="926"/>
                     <connections>
                         <outlet property="backgroundView" destination="exQ-wB-czQ" id="4RL-vj-yoz"/>
+                        <outlet property="scrollView" destination="hLB-aR-qXc" id="Okf-ag-oJP"/>
                         <outlet property="starbucksCard" destination="uCq-CE-vY6" id="5Uq-Nv-HJ1"/>
                     </connections>
                 </viewController>

@@ -10,11 +10,15 @@ import UIKit
 class PayViewController: UIViewController {
 
     @IBOutlet weak var backgroundView: UIView!
-    
+
     @IBOutlet weak var starbucksCard: UIImageView!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.scrollView.delegate = self
+        
         self.starbucksCard.layer.borderWidth = 0.3
         self.starbucksCard.layer.borderColor = UIColor.lightGray.cgColor
         self.starbucksCard.layer.cornerRadius = 10
@@ -27,4 +31,17 @@ class PayViewController: UIViewController {
 
 }
 
-// 스크롤 내려가면 navigation title 나오게
+
+extension PayViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    
+        if self.scrollView.contentOffset.y > 0 {
+            UIView.animate(withDuration: 2, animations: {            self.navigationItem.title = "Pay"
+            })
+        } else {
+            UIView.animate(withDuration: 2, animations: {            self.navigationItem.title = ""
+            })
+
+        }
+    }
+}
