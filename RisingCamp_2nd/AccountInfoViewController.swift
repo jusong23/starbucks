@@ -22,6 +22,11 @@ class AccountInfoViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func changeUserNickName(_ sender: Any) {
+        guard let AccountInfoViewController = self.storyboard?.instantiateViewController(withIdentifier: "ChangeNickNameViewController") else { return }
+            self.navigationController?.pushViewController(AccountInfoViewController, animated: true)
+    }
+    
     
 }
 
