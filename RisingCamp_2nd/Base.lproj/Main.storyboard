@@ -779,6 +779,11 @@
                                                             <constraint firstAttribute="width" constant="110" id="2IH-hA-eEb"/>
                                                             <constraint firstAttribute="height" constant="110" id="KAp-uR-BKT"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MjN-yv-Kwr">
                                                         <rect key="frame" x="132" y="0.0" width="110" height="110"/>
@@ -787,6 +792,11 @@
                                                             <constraint firstAttribute="width" constant="110" id="1NG-4P-Gel"/>
                                                             <constraint firstAttribute="height" constant="110" id="3nF-Ze-8Uj"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cS-Rh-ke6">
                                                         <rect key="frame" x="264" y="0.0" width="110" height="110"/>
@@ -795,10 +805,15 @@
                                                             <constraint firstAttribute="height" constant="110" id="7U2-1w-e1F"/>
                                                             <constraint firstAttribute="width" constant="110" id="qI5-is-kEA"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kxN-bv-DJa">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hpy-7N-Q6e">
                                                 <rect key="frame" x="20" y="288" width="374" height="110"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oe6-YH-UEb">
@@ -808,40 +823,85 @@
                                                             <constraint firstAttribute="height" constant="110" id="I8y-E2-wyQ"/>
                                                             <constraint firstAttribute="width" constant="110" id="c9P-3W-Aqk"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-cJ-bSY">
                                                         <rect key="frame" x="132" y="0.0" width="110" height="110"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8ZU-VK-RMF">
+                                                                <rect key="frame" x="23.5" y="22.5" width="63" height="65"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jh-zi-0cc">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="63" height="45.5"/>
+                                                                        <color key="tintColor" red="0.31764705879999999" green="0.61568627450000002" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="person.crop.circle.badge.plus" catalog="system" title="">
+                                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="26"/>
+                                                                        </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="TapToTheAccountInfo:" destination="48O-vd-6ug" eventType="touchUpInside" id="WfJ-Oe-FHU"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정정보" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM2-c9-ep1">
+                                                                        <rect key="frame" x="0.0" y="45.5" width="63" height="19.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="110" id="HBG-cU-1nZ"/>
+                                                            <constraint firstItem="8ZU-VK-RMF" firstAttribute="centerX" secondItem="BKK-cJ-bSY" secondAttribute="centerX" id="Y0N-t3-zCP"/>
+                                                            <constraint firstItem="8ZU-VK-RMF" firstAttribute="centerY" secondItem="BKK-cJ-bSY" secondAttribute="centerY" id="eVA-z2-pSy"/>
                                                             <constraint firstAttribute="width" constant="110" id="gn4-vq-mnn"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7b-fz-hhO">
                                                         <rect key="frame" x="264" y="0.0" width="110" height="110"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1607 2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SR5-Iz-ZxI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="110" id="Pq0-zN-SNY"/>
                                                             <constraint firstAttribute="width" constant="110" id="dPc-Jk-bgo"/>
+                                                            <constraint firstItem="SR5-Iz-ZxI" firstAttribute="top" secondItem="u7b-fz-hhO" secondAttribute="top" id="eeW-cQ-Ows"/>
+                                                            <constraint firstItem="SR5-Iz-ZxI" firstAttribute="width" secondItem="u7b-fz-hhO" secondAttribute="width" id="qEi-hJ-vko"/>
+                                                            <constraint firstAttribute="trailing" secondItem="SR5-Iz-ZxI" secondAttribute="trailing" id="tcg-D2-OIT"/>
+                                                            <constraint firstItem="SR5-Iz-ZxI" firstAttribute="height" secondItem="u7b-fz-hhO" secondAttribute="height" id="wsQ-k6-O69"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="QV1-FV-PpD" firstAttribute="top" secondItem="VSw-Bx-dJz" secondAttribute="bottom" constant="35" id="42z-N0-Kkd"/>
                                             <constraint firstItem="3Dl-qW-aiW" firstAttribute="leading" secondItem="cfP-Un-etk" secondAttribute="leading" constant="20" id="4Sc-K7-lvB"/>
                                             <constraint firstItem="VSw-Bx-dJz" firstAttribute="leading" secondItem="cfP-Un-etk" secondAttribute="leading" id="56X-HN-svA"/>
-                                            <constraint firstItem="kxN-bv-DJa" firstAttribute="top" secondItem="3Dl-qW-aiW" secondAttribute="bottom" constant="15" id="EEu-hY-Ek0"/>
+                                            <constraint firstItem="hpy-7N-Q6e" firstAttribute="leading" secondItem="cfP-Un-etk" secondAttribute="leading" constant="20" id="7tL-TB-C4k"/>
+                                            <constraint firstAttribute="trailing" secondItem="hpy-7N-Q6e" secondAttribute="trailing" constant="20" id="NUF-gt-kHC"/>
                                             <constraint firstAttribute="trailing" secondItem="VSw-Bx-dJz" secondAttribute="trailing" id="Z11-xr-fXi"/>
                                             <constraint firstItem="VSw-Bx-dJz" firstAttribute="top" secondItem="cfP-Un-etk" secondAttribute="top" id="ZpG-Nc-CMM"/>
-                                            <constraint firstItem="kxN-bv-DJa" firstAttribute="leading" secondItem="cfP-Un-etk" secondAttribute="leading" constant="20" id="b3S-Vf-h19"/>
                                             <constraint firstItem="m0k-Nr-7Nh" firstAttribute="width" secondItem="cfP-Un-etk" secondAttribute="width" id="dsf-D8-LAf"/>
-                                            <constraint firstAttribute="trailing" secondItem="kxN-bv-DJa" secondAttribute="trailing" constant="20" id="gYV-NP-4Sh"/>
                                             <constraint firstAttribute="trailing" secondItem="3Dl-qW-aiW" secondAttribute="trailing" constant="20" id="il3-G3-s9f"/>
                                             <constraint firstItem="3Dl-qW-aiW" firstAttribute="top" secondItem="QV1-FV-PpD" secondAttribute="bottom" constant="15" id="noc-i2-TWB"/>
                                             <constraint firstAttribute="trailing" secondItem="QV1-FV-PpD" secondAttribute="trailing" constant="20" id="pn1-pC-5tX"/>
+                                            <constraint firstItem="hpy-7N-Q6e" firstAttribute="top" secondItem="3Dl-qW-aiW" secondAttribute="bottom" constant="15" id="qE0-JR-2WM"/>
                                             <constraint firstItem="QV1-FV-PpD" firstAttribute="leading" secondItem="cfP-Un-etk" secondAttribute="leading" constant="20" id="t3Y-2f-ymC"/>
                                         </constraints>
                                     </view>
@@ -888,12 +948,28 @@
             </objects>
             <point key="canvasLocation" x="2602.898550724638" y="2927.6785714285711"/>
         </scene>
+        <!--Account Info View Controller-->
+        <scene sceneID="ty7-tD-BrQ">
+            <objects>
+                <viewController storyboardIdentifier="AccountInfoViewController" id="hMW-bQ-L2e" customClass="AccountInfoViewController" customModule="RisingCamp_2nd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LES-GC-gNH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="elq-h4-u2O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQJ-ad-ROn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3391" y="2928"/>
+        </scene>
     </scenes>
     <resources>
         <image name="IMG_1589.jpg" width="387" height="251.33332824707031"/>
         <image name="IMG_1590.jpg" width="385" height="90.333335876464844"/>
         <image name="IMG_1602.jpg" width="332.66665649414062" height="208.33332824707031"/>
         <image name="IMG_1603.jpg" width="319.33334350585938" height="60"/>
+        <image name="IMG_1607 2.jpg" width="134.66667175292969" height="134.66667175292969"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <image name="cup.and.saucer.fill" catalog="system" width="128" height="91"/>
@@ -904,6 +980,7 @@
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="list.star" catalog="system" width="128" height="94"/>
+        <image name="person.crop.circle.badge.plus" catalog="system" width="128" height="113"/>
         <image name="star.circle" catalog="system" width="128" height="121"/>
         <image name="ticket" catalog="system" width="128" height="84"/>
         <image name="wonsign.circle" catalog="system" width="128" height="121"/>
@@ -916,9 +993,6 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -21,17 +21,14 @@ class OtherViewController: UIViewController {
         self.otherView.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.otherView.layer.shadowOpacity = 0.2
         
-        self.InfoTap.layer.borderWidth = 0.3
-        self.InfoTap.layer.borderColor = UIColor.lightGray.cgColor
-        self.InfoTap.layer.cornerRadius = 10
-        
+
     }
     
+    @IBAction func TapToTheAccountInfo(_ sender: Any) {
+        guard let OtherViewController = self.storyboard?.instantiateViewController(withIdentifier: "AccountInfoViewController") else { return }
+            self.navigationController?.pushViewController(OtherViewController, animated: true)
+    }
     
-    
-    
-    
-
 }
 
 extension OtherViewController: UIScrollViewDelegate {

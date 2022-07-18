@@ -24,6 +24,10 @@
 		9BC6928B2885335200B0F5A7 /* IMG_1603.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC692892885334C00B0F5A7 /* IMG_1603.jpg */; };
 		9BC6928C2885335200B0F5A7 /* IMG_1602.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6928A2885334F00B0F5A7 /* IMG_1602.jpg */; };
 		9BC6928E2885417700B0F5A7 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6928D2885417700B0F5A7 /* OtherViewController.swift */; };
+		9BC6929028855E5000B0F5A7 /* componentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6928F28855E4F00B0F5A7 /* componentSetting.swift */; };
+		9BC692922885603500B0F5A7 /* IMG_1607.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC692912885603500B0F5A7 /* IMG_1607.jpg */; };
+		9BC692942885609500B0F5A7 /* IMG_1607 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC692932885609400B0F5A7 /* IMG_1607 2.jpg */; };
+		9BC69296288563F900B0F5A7 /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC69295288563F900B0F5A7 /* AccountInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		9BC692892885334C00B0F5A7 /* IMG_1603.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1603.jpg; path = ../../../Downloads/IMG_1603.jpg; sourceTree = "<group>"; };
 		9BC6928A2885334F00B0F5A7 /* IMG_1602.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1602.jpg; path = ../../../Downloads/IMG_1602.jpg; sourceTree = "<group>"; };
 		9BC6928D2885417700B0F5A7 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		9BC6928F28855E4F00B0F5A7 /* componentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = componentSetting.swift; sourceTree = "<group>"; };
+		9BC692912885603500B0F5A7 /* IMG_1607.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1607.jpg; path = ../../../Downloads/IMG_1607.jpg; sourceTree = "<group>"; };
+		9BC692932885609400B0F5A7 /* IMG_1607 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "IMG_1607 2.jpg"; path = "../../../Downloads/IMG_1607 2.jpg"; sourceTree = "<group>"; };
+		9BC69295288563F900B0F5A7 /* AccountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +87,12 @@
 		9BC6925A28828A3200B0F5A7 /* RisingCamp_2nd */ = {
 			isa = PBXGroup;
 			children = (
+				9BC6928F28855E4F00B0F5A7 /* componentSetting.swift */,
 				9BC6925B28828A3200B0F5A7 /* AppDelegate.swift */,
 				9BC6925D28828A3200B0F5A7 /* SceneDelegate.swift */,
 				9BC6925F28828A3200B0F5A7 /* ViewController.swift */,
 				9BC6926128828A3200B0F5A7 /* Main.storyboard */,
+				9BC69295288563F900B0F5A7 /* AccountInfoViewController.swift */,
 				9BC6928D2885417700B0F5A7 /* OtherViewController.swift */,
 				9BC69287288528E500B0F5A7 /* PayViewController.swift */,
 				9BC6926428828A3500B0F5A7 /* Assets.xcassets */,
@@ -98,6 +108,8 @@
 				9BC6928428841EC300B0F5A7 /* IMG_1590.jpg */,
 				9BC6928A2885334F00B0F5A7 /* IMG_1602.jpg */,
 				9BC692892885334C00B0F5A7 /* IMG_1603.jpg */,
+				9BC692912885603500B0F5A7 /* IMG_1607.jpg */,
+				9BC692932885609400B0F5A7 /* IMG_1607 2.jpg */,
 			);
 			path = RisingCamp_2nd;
 			sourceTree = "<group>";
@@ -168,6 +180,8 @@
 				9BC6928528841EC400B0F5A7 /* IMG_1589.jpg in Resources */,
 				9BC6927628839EBD00B0F5A7 /* logo in Resources */,
 				9BC6928628841EC400B0F5A7 /* IMG_1590.jpg in Resources */,
+				9BC692922885603500B0F5A7 /* IMG_1607.jpg in Resources */,
+				9BC692942885609500B0F5A7 /* IMG_1607 2.jpg in Resources */,
 				9BC6926328828A3200B0F5A7 /* Main.storyboard in Resources */,
 				9BC692822884105E00B0F5A7 /* 해변2.jpeg in Resources */,
 				9BC6927C2883B2A100B0F5A7 /* 스크린샷 2022-07-17 11.59.33.png in Resources */,
@@ -182,8 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC6929028855E5000B0F5A7 /* componentSetting.swift in Sources */,
 				9BC6926028828A3200B0F5A7 /* ViewController.swift in Sources */,
 				9BC6925C28828A3200B0F5A7 /* AppDelegate.swift in Sources */,
+				9BC69296288563F900B0F5A7 /* AccountInfoViewController.swift in Sources */,
 				9BC6925E28828A3200B0F5A7 /* SceneDelegate.swift in Sources */,
 				9BC69288288528E500B0F5A7 /* PayViewController.swift in Sources */,
 				9BC6928E2885417700B0F5A7 /* OtherViewController.swift in Sources */,
