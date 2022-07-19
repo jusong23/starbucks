@@ -17,7 +17,6 @@
 		9BC6926828828A3500B0F5A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6926628828A3500B0F5A7 /* LaunchScreen.storyboard */; };
 		9BC6927628839EBD00B0F5A7 /* logo in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6927428839EBD00B0F5A7 /* logo */; };
 		9BC692782883A21D00B0F5A7 /* switcher in Resources */ = {isa = PBXBuildFile; fileRef = 9BC692772883A21D00B0F5A7 /* switcher */; };
-		9BC6927C2883B2A100B0F5A7 /* 스크린샷 2022-07-17 11.59.33.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6927B2883B2A100B0F5A7 /* 스크린샷 2022-07-17 11.59.33.png */; };
 		9BC6927F28840FD100B0F5A7 /* 해변_일러스트.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6927E28840FD000B0F5A7 /* 해변_일러스트.html */; };
 		9BC692822884105E00B0F5A7 /* 해변2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC692812884105E00B0F5A7 /* 해변2.jpeg */; };
 		9BC6928528841EC400B0F5A7 /* IMG_1589.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6928328841EC300B0F5A7 /* IMG_1589.jpg */; };
@@ -45,7 +44,6 @@
 		9BC6926928828A3500B0F5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BC6927428839EBD00B0F5A7 /* logo */ = {isa = PBXFileReference; lastKnownFileType = file; name = logo; path = ../../../Downloads/logo; sourceTree = "<group>"; };
 		9BC692772883A21D00B0F5A7 /* switcher */ = {isa = PBXFileReference; lastKnownFileType = file; name = switcher; path = ../../../Downloads/switcher; sourceTree = "<group>"; };
-		9BC6927B2883B2A100B0F5A7 /* 스크린샷 2022-07-17 11.59.33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "스크린샷 2022-07-17 11.59.33.png"; path = "../../../Desktop/스크린샷 2022-07-17 11.59.33.png"; sourceTree = "<group>"; };
 		9BC6927E28840FD000B0F5A7 /* 해변_일러스트.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "해변_일러스트.html"; path = "../../../Downloads/해변_일러스트.html"; sourceTree = "<group>"; };
 		9BC6928028840FF200B0F5A7 /* 해변_일러스트.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "해변_일러스트.png"; path = "../../../Downloads/해변_일러스트.png"; sourceTree = "<group>"; };
 		9BC692812884105E00B0F5A7 /* 해변2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "해변2.jpeg"; path = "../../../Downloads/해변2.jpeg"; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				9BC6926928828A3500B0F5A7 /* Info.plist */,
 				9BC6927428839EBD00B0F5A7 /* logo */,
 				9BC692772883A21D00B0F5A7 /* switcher */,
-				9BC6927B2883B2A100B0F5A7 /* 스크린샷 2022-07-17 11.59.33.png */,
 				9BC6927E28840FD000B0F5A7 /* 해변_일러스트.html */,
 				9BC6928028840FF200B0F5A7 /* 해변_일러스트.png */,
 				9BC692812884105E00B0F5A7 /* 해변2.jpeg */,
@@ -190,7 +187,6 @@
 				9BC692942885609500B0F5A7 /* IMG_1607 2.jpg in Resources */,
 				9BC6926328828A3200B0F5A7 /* Main.storyboard in Resources */,
 				9BC692822884105E00B0F5A7 /* 해변2.jpeg in Resources */,
-				9BC6927C2883B2A100B0F5A7 /* 스크린샷 2022-07-17 11.59.33.png in Resources */,
 				9BC6928B2885335200B0F5A7 /* IMG_1603.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

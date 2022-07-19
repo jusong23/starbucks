@@ -982,8 +982,10 @@
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="InfoTap" destination="MjN-yv-Kwr" id="soX-CT-gSm"/>
+                        <outlet property="nickName_OTHER" destination="EVE-nO-xwl" id="Oij-ic-woz"/>
                         <outlet property="otherView" destination="m0k-Nr-7Nh" id="KSz-rz-zFT"/>
                         <outlet property="scrollView" destination="8Xp-be-hOs" id="DaO-OR-uTp"/>
+                        <outlet property="testLabel" destination="44U-tO-Fec" id="pua-Mp-bLu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOe-ex-snY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1036,10 +1038,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="752" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3II-ip-HO1">
-                                                <rect key="frame" x="325.5" y="116" width="68.5" height="35"/>
+                                                <rect key="frame" x="322.5" y="116" width="71.5" height="35"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHD-tW-WZj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="35"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이주송" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHD-tW-WZj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="47" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="x3W-Nv-k8J"/>
                                                         </constraints>
@@ -1048,7 +1050,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYt-wF-DhH">
-                                                        <rect key="frame" x="56" y="0.0" width="12.5" height="35"/>
+                                                        <rect key="frame" x="59" y="0.0" width="12.5" height="35"/>
                                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="chevron.right" catalog="system"/>
@@ -1226,17 +1228,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nickName_ACINFO" destination="kHD-tW-WZj" id="NYA-zA-GAk"/>
                         <outlet property="scrollView" destination="YBk-Cz-eim" id="JUP-2M-qCq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQJ-ad-ROn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3389.8550724637685" y="2927.6785714285711"/>
+            <point key="canvasLocation" x="3249" y="2928"/>
         </scene>
         <!--Change Nick Name View Controller-->
         <scene sceneID="PdA-Y5-m4a">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YuZ-2C-yeB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ChangeNickNameViewController" id="o3m-Nf-ttx" customClass="ChangeNickNameViewController" customModule="RisingCamp_2nd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jp1-zC-YJi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1282,7 +1284,57 @@
                                             </navigationBar>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkF-8S-VYR">
                                                 <rect key="frame" x="0.0" y="44" width="414" height="808"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2o-tQ-ROX">
+                                                        <rect key="frame" x="20" y="20" width="374" height="34"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이주송" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lPl-0u-fIR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.90000000000000002"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEc-bc-BB6">
+                                                                <rect key="frame" x="304" y="0.0" width="70" height="34"/>
+                                                                <color key="backgroundColor" red="0.31764705879999999" green="0.61568627450000002" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="70" id="OuB-Tf-ihY"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name=".AppleSDGothicNeoI-Regular" family=".Apple SD Gothic NeoI" pointSize="14"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="저장하기">
+                                                                    <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tapSaveButton:" destination="o3m-Nf-ttx" eventType="touchUpInside" id="dsf-Ww-YR8"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </stackView>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="X2o-tQ-ROX" firstAttribute="top" secondItem="bkF-8S-VYR" secondAttribute="top" constant="20" id="9U5-Ze-CbJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="X2o-tQ-ROX" secondAttribute="trailing" constant="20" id="DZ9-16-wex"/>
+                                                    <constraint firstItem="X2o-tQ-ROX" firstAttribute="leading" secondItem="bkF-8S-VYR" secondAttribute="leading" constant="20" id="eZ0-1Y-TbZ"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1319,9 +1371,13 @@
                             <constraint firstItem="dgh-T4-9WN" firstAttribute="top" secondItem="lbr-J1-IAz" secondAttribute="top" id="pXx-3r-ffl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="lPl-0u-fIR" id="3G4-wM-ldH"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YuZ-2C-yeB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4211.594202898551" y="2927.6785714285711"/>
+            <point key="canvasLocation" x="3883" y="2928"/>
         </scene>
     </scenes>
     <resources>

@@ -9,10 +9,12 @@ import UIKit
 
 class OtherViewController: UIViewController {
 
+    @IBOutlet weak var nickName_OTHER: UILabel!
     @IBOutlet weak var otherView: UIView!
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var InfoTap: UIView!
+    @IBOutlet weak var testLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +22,16 @@ class OtherViewController: UIViewController {
         self.otherView.layer.shadowColor = UIColor.black.cgColor
         self.otherView.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.otherView.layer.shadowOpacity = 0.2
-        
-
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.nickName_OTHER.text = UserDefaults.standard.string(forKey: "NICKNAME") ?? "이주송"
+        
+    }
+
+    
     @IBAction func TapToTheAccountInfo(_ sender: Any) {
-        guard let OtherViewController = self.storyboard?.instantiateViewController(withIdentifier: "AccountInfoViewController") else { return }
+        guard let OtherViewController = self.storyboard?.instantiateViewController(withIdentifier: "AccountInfoViewController") as? AccountInfoViewController else { return }
             self.navigationController?.pushViewController(OtherViewController, animated: true)
     }
     
@@ -41,3 +47,11 @@ extension OtherViewController: UIScrollViewDelegate {
         }
     }
 }
+
+extension OtherViewController: SendNickNameDelegate {
+    func sendNickName(name: String) {
+        self.nickName_OTHER.text = name
+    }
+}
+
+

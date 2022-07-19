@@ -7,7 +7,15 @@
 
 import UIKit
 
+protocol SendNickNameDelegate: AnyObject {
+    func sendNickName(name: String)
+}
+
 class ChangeNickNameViewController: UIViewController {
+
+    weak var delegate: SendNickNameDelegate?
+
+    @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,18 +24,12 @@ class ChangeNickNameViewController: UIViewController {
         self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.navigationController?.navigationBar.layer.shadowOpacity = 0.2    }
     
+    @IBAction func tapSaveButton(_ sender: Any) {
+        self.delegate?.sendNickName(name: self.textField.text ?? "")
+        print("저장되었습니다.")
+    }
+    
     @IBAction func backToTheAccountInfoViewController(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
