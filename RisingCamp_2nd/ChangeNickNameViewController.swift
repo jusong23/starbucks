@@ -19,10 +19,7 @@ class ChangeNickNameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.layer.borderWidth = 0
-        self.navigationController?.navigationBar.layer.shadowColor = UIColor.black.cgColor
-        self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2)
-        self.navigationController?.navigationBar.layer.shadowOpacity = 0.2    }
+    }
     
     @IBAction func tapSaveButton(_ sender: Any) {
         self.delegate?.sendNickName(name: self.textField.text ?? "")

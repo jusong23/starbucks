@@ -31,8 +31,10 @@ class OtherViewController: UIViewController {
 
     
     @IBAction func TapToTheAccountInfo(_ sender: Any) {
-        guard let OtherViewController = self.storyboard?.instantiateViewController(withIdentifier: "AccountInfoViewController") as? AccountInfoViewController else { return }
-            self.navigationController?.pushViewController(OtherViewController, animated: true)
+        guard let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "AccountInfoViewController") as? AccountInfoViewController else { return }
+// 다운 캐스팅 하여 as? 뒤에 있는 요소에 접근할 수 있다.
+// self.AccountInfoViewController.text (앞에 바뀐 text 가져와보기
+        self.navigationController?.pushViewController(ViewController, animated: true)
     }
     
 }

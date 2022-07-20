@@ -8,22 +8,29 @@
 import UIKit
 
 class OrderViewController: UIViewController {
-
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.scrollView.delegate = self
 
-        // Do any additional setup after loading the view.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
+extension OrderViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        print(self.scrollView.contentOffset.y)
+        if self.scrollView.contentOffset.y > -143 {
+            navigationItem.largeTitleDisplayMode = .never
+
+        } else {
+            navigationItem.largeTitleDisplayMode = .always
+
+
+        }
     }
-    */
-
 }
