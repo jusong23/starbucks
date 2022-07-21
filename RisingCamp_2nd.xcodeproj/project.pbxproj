@@ -39,6 +39,7 @@
 		9BC6928E2885417700B0F5A7 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6928D2885417700B0F5A7 /* OtherViewController.swift */; };
 		9BC6929028855E5000B0F5A7 /* componentSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6928F28855E4F00B0F5A7 /* componentSetting.swift */; };
 		9BC69296288563F900B0F5A7 /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC69295288563F900B0F5A7 /* AccountInfoViewController.swift */; };
+		9BDEDA9528895571002C7DF2 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDEDA9428895571002C7DF2 /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		9BC6928D2885417700B0F5A7 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		9BC6928F28855E4F00B0F5A7 /* componentSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = componentSetting.swift; sourceTree = "<group>"; };
 		9BC69295288563F900B0F5A7 /* AccountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
+		9BDEDA9428895571002C7DF2 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				9B36B80E2888ED33001336DD /* GiftViewController.swift */,
+				9BDEDA9428895571002C7DF2 /* MenuCell.swift */,
 				9BC6928F28855E4F00B0F5A7 /* componentSetting.swift */,
 				9BC6925B28828A3200B0F5A7 /* AppDelegate.swift */,
 				9BC6925D28828A3200B0F5A7 /* SceneDelegate.swift */,
@@ -236,6 +239,7 @@
 			files = (
 				9B3963AB2885750B00446E87 /* ChangeNickNameViewController.swift in Sources */,
 				9BC6929028855E5000B0F5A7 /* componentSetting.swift in Sources */,
+				9BDEDA9528895571002C7DF2 /* MenuCell.swift in Sources */,
 				9B5746352889345D00308A09 /* CustomTableViewCell.swift in Sources */,
 				9BC6926028828A3200B0F5A7 /* ViewController.swift in Sources */,
 				9BC6925C28828A3200B0F5A7 /* AppDelegate.swift in Sources */,

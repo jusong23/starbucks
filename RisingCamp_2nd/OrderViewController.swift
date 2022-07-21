@@ -9,19 +9,47 @@ import UIKit
 
 class OrderViewController: UIViewController {
     
-//    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    struct menuList {
+        static var instances = 0
+
+        let image: String
+        let name: String
+        let sub: String
+        
+        init(image:String, name:String, sub:String)
+         {
+             self.image = image
+             self.name = name
+             self.sub = sub
+             menuList.instances += 1
+         }
+    }
+    
+    var exMenuList = [menuList]()
+//
+//    var one = menuList(image: "IMG_1632.jpg",name: "에스프레소 콘 파냐",sub: "Espresso Con Panna")
+//    var two = menuList(image: "IMG_1633.jpg",name: "에스프레소 마키아또",sub: "Espresso Macchiato")
+//    var three = menuList(image: "IMG_1634.jpg",name: "아이스 카페 아메리카노",sub: "Ice Americano")
+//    var four = menuList(image: "IMG_1635.jpg",name: "카페 아메리카노",sub: "Americano")
+//    var five = menuList(image: "IMG_1636.jpg",name: "아이스 카라멜 마키아또",sub: "Ice Carmel Macchiato")
+//    var six = menuList(image: "IMG_1645.jpg",name: "콜드 브루 몰트",sub: "Cold Brew Molt")
+//    var seven = menuList(image: "IMG_1647.jpg",name: "콜드 브루 플로트",sub: "Cold Brew Float")
+//
+//
+// 배열안에 구조체 두기 (갯수 & 인덱스로 가져와 이미지 넣기)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.scrollView.delegate = self
-//        self.tableView.dataSource = self
-//        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        print(menuList.instances)
+
     }
     
-    let label = ["1","2","3","4","5"]
-
 }
 
 extension OrderViewController: UIScrollViewDelegate {
@@ -41,7 +69,7 @@ extension OrderViewController: UIScrollViewDelegate {
 extension OrderViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return menuList.instances
     }//셀 갯수
 
 
@@ -50,14 +78,5 @@ extension OrderViewController: UITableViewDataSource {
 //        cell.myLabel?.text = label[indexPath.row]
         return cell
     } //.  dequeue~ 는 셀을 재사용해서 넣기 위함
-    
- 
-}
 
-extension OrderViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        130
-    }
-    
-    
 }

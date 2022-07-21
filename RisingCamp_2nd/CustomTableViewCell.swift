@@ -8,7 +8,11 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var menuImage: UIImageView!
+    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var SubLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

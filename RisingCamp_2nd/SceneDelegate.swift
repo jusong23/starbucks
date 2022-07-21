@@ -46,7 +46,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         imageView = UIImageView(frame: window.frame)
-        imageView?.image = UIImage(named: "switcher" )
+        imageView?.image = UIImage(named: "IMG_1641.jpg" )
         window.addSubview(imageView!)
         
     } // 위로 슬라이드해서 강제종료 하는 상황. (은행,스타벅스 앱 생각해보기) Cycle.2
