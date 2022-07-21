@@ -34,13 +34,17 @@ class PayViewController: UIViewController {
 
 extension PayViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    
-        if self.scrollView.contentOffset.y > 0 {
-            UIView.animate(withDuration: 2, animations: {            self.navigationItem.title = "Pay"
-            })
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+
+        print(self.scrollView.contentOffset.y)
+        if self.scrollView.contentOffset.y > 0
+        {
+            navigationItem.largeTitleDisplayMode = .never
+
         } else {
-            UIView.animate(withDuration: 2, animations: {            self.navigationItem.title = ""
-            })
+            navigationItem.largeTitleDisplayMode = .always
+
 
         }
     }
