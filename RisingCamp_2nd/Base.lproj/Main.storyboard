@@ -1286,7 +1286,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-rZ-4L3">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-rZ-4L3">
                                                                     <rect key="frame" x="25" y="5" width="90" height="90"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="90" id="9RN-xm-ZB6"/>
@@ -1294,41 +1294,41 @@
                                                                     </constraints>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                            <real key="value" value="45"/>
+                                                                            <real key="value" value="47"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-eY-tiO">
-                                                                    <rect key="frame" x="140" y="25" width="41.5" height="49"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-eY-tiO">
+                                                                    <rect key="frame" x="123" y="31" width="33" height="38"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uad-za-h6k">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="33" height="16"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaO-oy-4aE">
-                                                                            <rect key="frame" x="0.0" y="28.5" width="41.5" height="20.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
+                                                                            <rect key="frame" x="0.0" y="24" width="33" height="14"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
                                                             <constraints>
+                                                                <constraint firstItem="GvN-eY-tiO" firstAttribute="leading" secondItem="jgT-rZ-4L3" secondAttribute="trailing" constant="8" symbolic="YES" id="CmI-EK-RoB"/>
                                                                 <constraint firstItem="jgT-rZ-4L3" firstAttribute="top" secondItem="pjF-6T-Emj" secondAttribute="top" constant="5" id="D32-B0-usy"/>
-                                                                <constraint firstItem="GvN-eY-tiO" firstAttribute="leading" secondItem="jgT-rZ-4L3" secondAttribute="trailing" constant="25" id="Ne7-60-XLQ"/>
+                                                                <constraint firstItem="GvN-eY-tiO" firstAttribute="centerY" secondItem="jgT-rZ-4L3" secondAttribute="centerY" id="Qi2-si-ihW"/>
                                                                 <constraint firstAttribute="bottom" secondItem="jgT-rZ-4L3" secondAttribute="bottom" constant="5" id="S0Y-S9-FRv"/>
+                                                                <constraint firstItem="GvN-eY-tiO" firstAttribute="top" secondItem="pjF-6T-Emj" secondAttribute="topMargin" constant="20" id="T7d-VL-7Lw"/>
                                                                 <constraint firstItem="jgT-rZ-4L3" firstAttribute="leading" secondItem="pjF-6T-Emj" secondAttribute="leading" constant="25" id="n2v-zz-XlN"/>
-                                                                <constraint firstItem="GvN-eY-tiO" firstAttribute="top" secondItem="pjF-6T-Emj" secondAttribute="topMargin" constant="14" id="xab-bj-qeB"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                         <connections>
                                                             <outlet property="SubLabel" destination="NaO-oy-4aE" id="1hW-PD-hUV"/>
                                                             <outlet property="TitleLabel" destination="uad-za-h6k" id="ISc-gN-w5A"/>
-                                                            <outlet property="image" destination="jgT-rZ-4L3" id="8EE-I7-MWn"/>
-                                                            <outlet property="menuImage" destination="jgT-rZ-4L3" id="4Eo-st-k9G"/>
+                                                            <outlet property="menuImage" destination="jgT-rZ-4L3" id="JXu-j1-p2p"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
