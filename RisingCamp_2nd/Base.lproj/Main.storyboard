@@ -639,7 +639,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xx-P8-JYI">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="783"/>
                                         <subviews>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-e2-irL">
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-e2-irL">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="570"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="21T-pe-f2w">
@@ -1113,8 +1113,67 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hS-QA-GFW">
                                 <rect key="frame" x="0.0" y="736" width="414" height="160"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="902-si-3eX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o5D-kr-I8b">
+                                                <rect key="frame" x="14" y="18" width="280" height="32"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="FOG-Wf-d9g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문할 매장을 선택해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTI-rg-Jvs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="185" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad5-qO-oZ6">
+                                                                <rect key="frame" x="236" y="0.0" width="44" height="31"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dET-Yj-zfK">
+                                                        <rect key="frame" x="0.0" y="31" width="280" height="1"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="hgN-p2-6zc"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="C2v-Pb-OGV"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj7-2H-J9J">
+                                                <rect key="frame" x="343" y="11" width="63" height="46"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="bag" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="27"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Kj7-2H-J9J" secondAttribute="trailing" constant="8" id="DhC-1L-iJq"/>
+                                            <constraint firstItem="Kj7-2H-J9J" firstAttribute="top" secondItem="902-si-3eX" secondAttribute="top" constant="11" id="GS5-vr-iaw"/>
+                                            <constraint firstAttribute="bottom" secondItem="Kj7-2H-J9J" secondAttribute="bottom" constant="12" id="NJz-73-0TL"/>
+                                            <constraint firstAttribute="bottom" secondItem="o5D-kr-I8b" secondAttribute="bottom" constant="19" id="ZlW-u7-b8c"/>
+                                            <constraint firstItem="o5D-kr-I8b" firstAttribute="top" secondItem="902-si-3eX" secondAttribute="top" constant="18" id="fjH-lW-SRU"/>
+                                            <constraint firstItem="Kj7-2H-J9J" firstAttribute="centerY" secondItem="o5D-kr-I8b" secondAttribute="centerY" id="uCE-b0-ay3"/>
+                                            <constraint firstItem="o5D-kr-I8b" firstAttribute="leading" secondItem="902-si-3eX" secondAttribute="leading" constant="14" id="y2j-Ue-65I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.1843137255" green="0.070588235289999995" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="902-si-3eX" firstAttribute="top" secondItem="6hS-QA-GFW" secondAttribute="top" id="IUk-hm-yP3"/>
+                                    <constraint firstItem="902-si-3eX" firstAttribute="leading" secondItem="6hS-QA-GFW" secondAttribute="leading" id="NG6-um-8Ee"/>
+                                    <constraint firstAttribute="trailing" secondItem="902-si-3eX" secondAttribute="trailing" id="bpj-76-zc1"/>
                                     <constraint firstAttribute="height" constant="160" id="vOF-Bf-pZI"/>
                                 </constraints>
                             </view>
@@ -1163,7 +1222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfN-f7-loX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2746" y="1442"/>
+            <point key="canvasLocation" x="2744.9275362318845" y="1441.7410714285713"/>
         </scene>
         <!--GIft-->
         <scene sceneID="eKO-3e-LBb">
@@ -2252,9 +2311,11 @@
         <image name="IMG_1638.jpg" width="386.33334350585938" height="624"/>
         <image name="IMG_1639.jpg" width="385" height="420"/>
         <image name="IMG_1642.jpg" width="389.33334350585938" height="558.66668701171875"/>
+        <image name="bag" catalog="system" width="128" height="128"/>
         <image name="bag.badge.plus" catalog="system" width="124" height="128"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="calendar.badge.clock" catalog="system" width="128" height="108"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
