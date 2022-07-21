@@ -491,17 +491,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="395.5" id="qfu-R2-o1c"/>
                                                 </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                        <real key="value" value="0.20000000000000001"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                        <size key="value" width="0.0" height="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1638.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PcT-6T-VKV">
                                                 <rect key="frame" x="8" y="1276.5" width="398" height="624"/>
@@ -610,13 +599,12 @@
                         <outlet property="imageView" destination="8fA-vM-4Cw" id="W7i-CY-2ki"/>
                         <outlet property="scroll" destination="yWx-Wa-UW3" id="8UD-Pk-mlC"/>
                         <outlet property="stampSet" destination="qKG-9Q-xER" id="Jv4-oQ-JQA"/>
-                        <outlet property="star100" destination="PSk-2c-ZgX" id="BI3-Jf-fR0"/>
                         <outlet property="wellComeMessage" destination="Fkb-6N-uav" id="GuH-fJ-hll"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LP-Q4-O8L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3271.0144927536235" y="60.267857142857139"/>
+            <point key="canvasLocation" x="2745" y="-78"/>
         </scene>
         <!--Pay-->
         <scene sceneID="FfW-5b-NWu">
@@ -1094,7 +1082,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKg-oa-ABZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2860.8695652173915" y="774.77678571428567"/>
+            <point key="canvasLocation" x="2745" y="695"/>
         </scene>
         <!--Order-->
         <scene sceneID="10C-rV-3lV">
@@ -1175,15 +1163,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfN-f7-loX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2602.898550724638" y="1441.7410714285713"/>
+            <point key="canvasLocation" x="2746" y="1442"/>
         </scene>
         <!--GIft-->
         <scene sceneID="eKO-3e-LBb">
             <objects>
                 <navigationController id="qGC-2G-1x1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="GIft" image="gift.fill" catalog="system" selectedImage="gift.fill" id="c67-wX-Ut6"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gOr-Ih-sPF">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="gOr-Ih-sPF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1194,21 +1182,45 @@
             </objects>
             <point key="canvasLocation" x="1819" y="2176"/>
         </scene>
-        <!--View Controller-->
+        <!--Gift-->
         <scene sceneID="10g-sl-skL">
             <objects>
-                <viewController id="m1p-Y2-vKL" sceneMemberID="viewController">
+                <viewController title="Gift" id="m1p-Y2-vKL" customClass="GiftViewController" customModule="RisingCamp_2nd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AFd-WO-BUl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1642.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6zJ-v5-08F">
+                                <rect key="frame" x="20" y="140" width="374" height="542"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="542" id="IiS-gN-nDh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="atU-rn-6CD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="atU-rn-6CD" firstAttribute="trailing" secondItem="6zJ-v5-08F" secondAttribute="trailing" constant="20" id="ZTP-GX-wON"/>
+                            <constraint firstItem="6zJ-v5-08F" firstAttribute="top" secondItem="atU-rn-6CD" secondAttribute="top" id="bf3-jm-zcf"/>
+                            <constraint firstItem="6zJ-v5-08F" firstAttribute="leading" secondItem="atU-rn-6CD" secondAttribute="leading" constant="20" id="cJP-Wc-5W8"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="IVT-Vq-XzI"/>
+                    <navigationItem key="navigationItem" title="Gift" id="IVT-Vq-XzI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fro-aH-GQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2603" y="2176"/>
+            <point key="canvasLocation" x="2602.898550724638" y="2175.6696428571427"/>
         </scene>
         <!--Other-->
         <scene sceneID="PXK-QH-3oY">
@@ -2009,6 +2021,7 @@
         <image name="IMG_1637.jpg" width="388.33334350585938" height="395.66665649414062"/>
         <image name="IMG_1638.jpg" width="386.33334350585938" height="624"/>
         <image name="IMG_1639.jpg" width="385" height="420"/>
+        <image name="IMG_1642.jpg" width="389.33334350585938" height="558.66668701171875"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>

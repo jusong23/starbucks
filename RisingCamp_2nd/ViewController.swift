@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var wellComeMessage: UIStackView!
     @IBOutlet weak var stampSet: UIStackView!
     @IBOutlet weak var WhatsnewAndCouponVIew: UIView!
-    @IBOutlet weak var star100: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
