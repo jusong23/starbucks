@@ -28,6 +28,7 @@
 		9B36B8112888EDC2001336DD /* IMG_1642.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B36B8102888EDC1001336DD /* IMG_1642.jpg */; };
 		9B3963AB2885750B00446E87 /* ChangeNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3963AA2885750B00446E87 /* ChangeNickNameViewController.swift */; };
 		9B3963AD288587E500446E87 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3963AC288587E400446E87 /* OrderViewController.swift */; };
+		9B5746352889345D00308A09 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5746342889345D00308A09 /* CustomTableViewCell.swift */; };
 		9BC6925C28828A3200B0F5A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6925B28828A3200B0F5A7 /* AppDelegate.swift */; };
 		9BC6925E28828A3200B0F5A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6925D28828A3200B0F5A7 /* SceneDelegate.swift */; };
 		9BC6926028828A3200B0F5A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6925F28828A3200B0F5A7 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		9B36B8102888EDC1001336DD /* IMG_1642.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1642.jpg; path = ../../../Downloads/IMG_1642.jpg; sourceTree = "<group>"; };
 		9B3963AA2885750B00446E87 /* ChangeNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNickNameViewController.swift; sourceTree = "<group>"; };
 		9B3963AC288587E400446E87 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		9B5746342889345D00308A09 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9BC6925828828A3200B0F5A7 /* RisingCamp_2nd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RisingCamp_2nd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC6925B28828A3200B0F5A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BC6925D28828A3200B0F5A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				9BC6925D28828A3200B0F5A7 /* SceneDelegate.swift */,
 				9BC6925F28828A3200B0F5A7 /* ViewController.swift */,
 				9BC6926128828A3200B0F5A7 /* Main.storyboard */,
+				9B5746342889345D00308A09 /* CustomTableViewCell.swift */,
 				9B3963AC288587E400446E87 /* OrderViewController.swift */,
 				9B3963AA2885750B00446E87 /* ChangeNickNameViewController.swift */,
 				9BC69295288563F900B0F5A7 /* AccountInfoViewController.swift */,
@@ -233,6 +236,7 @@
 			files = (
 				9B3963AB2885750B00446E87 /* ChangeNickNameViewController.swift in Sources */,
 				9BC6929028855E5000B0F5A7 /* componentSetting.swift in Sources */,
+				9B5746352889345D00308A09 /* CustomTableViewCell.swift in Sources */,
 				9BC6926028828A3200B0F5A7 /* ViewController.swift in Sources */,
 				9BC6925C28828A3200B0F5A7 /* AppDelegate.swift in Sources */,
 				9BC69296288563F900B0F5A7 /* AccountInfoViewController.swift in Sources */,
