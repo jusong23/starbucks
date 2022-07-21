@@ -18,6 +18,7 @@ class OtherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.delegate = self
         self.otherView.layer.borderWidth = 0
         self.otherView.layer.shadowColor = UIColor.black.cgColor
         self.otherView.layer.shadowOffset = CGSize(width: 0, height: 2)
@@ -42,10 +43,15 @@ class OtherViewController: UIViewController {
 extension OtherViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
     
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+
+        print(self.scrollView.contentOffset.y)
         if self.scrollView.contentOffset.y > 0 {
-            self.navigationItem.title = "Other"
+            navigationItem.largeTitleDisplayMode = .never
+            self.otherView.isHidden = false
         } else {
-            self.navigationItem.title = ""
+            navigationItem.largeTitleDisplayMode = .always
+            self.otherView.isHidden = true
         }
     }
 }
