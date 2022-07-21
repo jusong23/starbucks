@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9B3963AB2885750B00446E87 /* ChangeNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3963AA2885750B00446E87 /* ChangeNickNameViewController.swift */; };
 		9B3963AD288587E500446E87 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3963AC288587E400446E87 /* OrderViewController.swift */; };
+		9B891E0628882CF400A11283 /* IMG_1638.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B891E0328882CF300A11283 /* IMG_1638.jpg */; };
+		9B891E0728882CF400A11283 /* IMG_1637.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B891E0428882CF400A11283 /* IMG_1637.jpg */; };
+		9B891E0828882CF400A11283 /* IMG_1639.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B891E0528882CF400A11283 /* IMG_1639.jpg */; };
 		9BC6925C28828A3200B0F5A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6925B28828A3200B0F5A7 /* AppDelegate.swift */; };
 		9BC6925E28828A3200B0F5A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6925D28828A3200B0F5A7 /* SceneDelegate.swift */; };
 		9BC6926028828A3200B0F5A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC6925F28828A3200B0F5A7 /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		9B3963AA2885750B00446E87 /* ChangeNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNickNameViewController.swift; sourceTree = "<group>"; };
 		9B3963AC288587E400446E87 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		9B891E0328882CF300A11283 /* IMG_1638.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1638.jpg; path = ../../../Downloads/IMG_1638.jpg; sourceTree = "<group>"; };
+		9B891E0428882CF400A11283 /* IMG_1637.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1637.jpg; path = ../../../Downloads/IMG_1637.jpg; sourceTree = "<group>"; };
+		9B891E0528882CF400A11283 /* IMG_1639.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1639.jpg; path = ../../../Downloads/IMG_1639.jpg; sourceTree = "<group>"; };
 		9BC6925828828A3200B0F5A7 /* RisingCamp_2nd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RisingCamp_2nd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC6925B28828A3200B0F5A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BC6925D28828A3200B0F5A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +137,9 @@
 				9BEB4382288826DD0097BD2B /* IMG_1634.jpg */,
 				9BEB4384288826E00097BD2B /* IMG_1635.jpg */,
 				9BEB4386288826E00097BD2B /* IMG_1636.jpg */,
+				9B891E0428882CF400A11283 /* IMG_1637.jpg */,
+				9B891E0328882CF300A11283 /* IMG_1638.jpg */,
+				9B891E0528882CF400A11283 /* IMG_1639.jpg */,
 			);
 			path = RisingCamp_2nd;
 			sourceTree = "<group>";
@@ -194,12 +203,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC6926828828A3500B0F5A7 /* LaunchScreen.storyboard in Resources */,
+				9B891E0628882CF400A11283 /* IMG_1638.jpg in Resources */,
 				9BEB4387288826E10097BD2B /* IMG_1634.jpg in Resources */,
 				9BC692782883A21D00B0F5A7 /* switcher in Resources */,
 				9BC6926528828A3500B0F5A7 /* Assets.xcassets in Resources */,
 				9BEB4388288826E10097BD2B /* IMG_1633.jpg in Resources */,
 				9BC6927F28840FD100B0F5A7 /* 해변_일러스트.html in Resources */,
 				9BC6928C2885335200B0F5A7 /* IMG_1602.jpg in Resources */,
+				9B891E0828882CF400A11283 /* IMG_1639.jpg in Resources */,
 				9BC6928528841EC400B0F5A7 /* IMG_1589.jpg in Resources */,
 				9BC6927628839EBD00B0F5A7 /* logo in Resources */,
 				9BEB4389288826E10097BD2B /* IMG_1635.jpg in Resources */,
@@ -208,6 +219,7 @@
 				9BC692922885603500B0F5A7 /* IMG_1607.jpg in Resources */,
 				9BEB438A288826E10097BD2B /* IMG_1632.jpg in Resources */,
 				9BC692942885609500B0F5A7 /* IMG_1607 2.jpg in Resources */,
+				9B891E0728882CF400A11283 /* IMG_1637.jpg in Resources */,
 				9BC6926328828A3200B0F5A7 /* Main.storyboard in Resources */,
 				9BEB438B288826E10097BD2B /* IMG_1636.jpg in Resources */,
 				9BC692822884105E00B0F5A7 /* 해변2.jpeg in Resources */,
