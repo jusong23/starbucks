@@ -10,11 +10,14 @@ import UIKit
 class PayViewController: UIViewController {
 
     @IBOutlet weak var backgroundView: UIView!
-
     @IBOutlet weak var dontScroll: UIStackView!
     @IBOutlet weak var starbucksCard: UIImageView!
-    
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

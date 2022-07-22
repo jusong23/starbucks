@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(#function)
         print("[App] 연결중")
         Thread.sleep(forTimeInterval: 0.6)
-
+        
         // Override point for customization after application launch.
         return true
     }

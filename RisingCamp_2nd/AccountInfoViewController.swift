@@ -19,7 +19,7 @@ class AccountInfoViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.nickName_ACINFO.text = UserDefaults.standard.string(forKey: "NICKNAME")
+        self.nickName_ACINFO.text = UserDefaults.standard.string(forKey: "NICKNAME") ?? "이주송"
     }
     
     @IBAction func backButton(_ sender: Any) {
