@@ -19,12 +19,12 @@ class AccountInfoViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        UserDefaults.standard.setValue(self.nickName_ACINFO.text, forKey: "NICKNAME")
+        self.nickName_ACINFO.text = UserDefaults.standard.string(forKey: "NICKNAME")
     }
     
     @IBAction func backButton(_ sender: Any) {
-        
         self.navigationController?.popViewController(animated: true)
+
     }
     
     @IBAction func changeUserNickName(_ sender: Any) {
@@ -41,10 +41,12 @@ extension AccountInfoViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
     
         if self.scrollView.contentOffset.y > 0 {
-            UIView.animate(withDuration: 2, animations: {            self.navigationItem.title = "계정정보"
+            UIView.animate(withDuration: 2, animations: {
+                self.navigationItem.title = "계정정보"
             })
         } else {
-            UIView.animate(withDuration: 2, animations: {            self.navigationItem.title = ""
+            UIView.animate(withDuration: 2, animations: {
+                self.navigationItem.title = ""
             })
 
         }

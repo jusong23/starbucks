@@ -11,6 +11,7 @@ class PayViewController: UIViewController {
 
     @IBOutlet weak var backgroundView: UIView!
 
+    @IBOutlet weak var dontScroll: UIStackView!
     @IBOutlet weak var starbucksCard: UIImageView!
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -44,8 +45,6 @@ extension PayViewController: UIScrollViewDelegate {
 
         } else {
             navigationItem.largeTitleDisplayMode = .always
-
-
         }
     }
 }

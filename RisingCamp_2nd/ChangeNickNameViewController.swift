@@ -21,6 +21,10 @@ class ChangeNickNameViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.textField.placeholder = UserDefaults.standard.string(forKey: "NICKNAME") ?? "이주송"
+    }
+    
     @IBAction func tapSaveButton(_ sender: Any) {
         self.delegate?.sendNickName(name: self.textField.text ?? "")
             let Alert = UIAlertController(
@@ -33,7 +37,7 @@ class ChangeNickNameViewController: UIViewController {
             Alert.addAction(AllowAction)
                     
             present(Alert, animated: true, completion: nil)
-
+        UserDefaults.standard.setValue(self.textField.text, forKey: "NICKNAME")
     }
     
     @IBAction func backToTheAccountInfoViewController(_ sender: Any) {
