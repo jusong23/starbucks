@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var boolValue = 0
 
     // TODO: 1. 이미지뷰 생성
         var imageView: UIImageView?
@@ -30,18 +31,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         print(#function)
         print("[Scene] 우리 눈에 보이는 화면에 도달했습니다.")
         
-//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) {
-//            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-//            let Alert = UIAlertController(
-//                title: "",
-//                message: "계속 입력하시겠습니까?",
-//                preferredStyle: UIAlertController.Style.alert
-//            )
-//            let AllowAction = UIAlertAction(title: "허용", style: UIAlertAction.Style.default, handler: nil)
-//            Alert.addAction(AllowAction)
-//            self.window?.rootViewController?.present(Alert, animated: true, completion: nil)
-//        }
+        self.boolValue += 1
         
+        if boolValue > 1 {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) {
+                self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+                let Alert = UIAlertController(
+                    title: "",
+                    message: "계속 입력하시겠습니까?",
+                    preferredStyle: UIAlertController.Style.alert
+                )
+                let AllowAction = UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: nil)
+                Alert.addAction(AllowAction)
+                self.window?.rootViewController?.present(Alert, animated: true, completion: nil)
+            }
+        }
         
         // TODO: 3. 앱이 다시 활성화 상태가 되면 이미지뷰를 superview (window)에서 제거한다
         if let imageView = imageView {
